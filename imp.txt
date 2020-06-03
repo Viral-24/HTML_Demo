@@ -1,0 +1,3 @@
+Images mapping 		- In images you can apply diffrent link on object or area
+
+The Picture Element 	- when u change the size of browes the picture will change 
