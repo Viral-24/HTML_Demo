@@ -26,10 +26,10 @@ jobs:
       - name: ServiceNow Change
         uses: ServiceNow/servicenow-devops-change@v1.34.2
         with:
-          devops-integration-user-name: ${{ secrets.DevOpsGithub }}
-          devops-integration-user-password: ${{ secrets.pjkkq)VvV)E}v8I8$zvU2o{4Ku4_w4to }}
-          instance-url: ${{ secrets.https://dev94514.service-now.com/ }}
-          tool-id: ${{ secrets.2c087a9247303110ce5b2d82e36d4382 }}
+          devops-integration-user-name: ${{ DevOpsGithub }}
+          devops-integration-user-password: ${{ pjkkq)VvV)E}v8I8$zvU2o{4Ku4_w4to }}
+          instance-url: ${{ https://dev94514.service-now.com/ }}
+          tool-id: ${{ 2c087a9247303110ce5b2d82e36d4382 }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Deploy'
           change-request: '{"setCloseCode":"true","attributes":{"short_description":"Automated Software Deployment","description":"Automated Software Deployment.","assignment_group":"a715cd759f2002002920bde8132e7018","implementation_plan":"Software update is tested and results can be found in Test Summaries Tab; When the change is approved the implementation happens automated by the CICD pipeline within the change planned start and end time window.","backout_plan":"When software fails in production, the previous software release will be re-deployed.","test_plan":"Testing if the software was successfully deployed"}}'
